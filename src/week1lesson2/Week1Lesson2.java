@@ -227,29 +227,29 @@ public class Week1Lesson2 {
 
 		Week1Lesson2 w1l2 = new Week1Lesson2();
 
-		//System.out.println("Calculating ");
-		//w1l2.convert(11.56);
-		//System.out.println("Array without Duplicates:");
-		//String[] arr = { "horse", "dog", "cat", "dog", "horse", "donkey" };
-		//w1l2.removeDups(arr);
-		//System.out.println("Draw Checkboard: ");
-		//w1l2.drawCheckBoard(8);
-		//System.out.println("Calculate weight in different planets: ");
-		//System.out.println("Weight = " + w1l2.calculateWeight());
-		//System.out.println("Counting Result of students: ");
-		//w1l2.countResult();
-		//System.out.println("Producing complex userName: ");
-		//System.out.println("user name: " + w1l2.produceUserName());
-		//System.out.println("Checking if a number is palindrome: ");
-		//if (w1l2.isPalindrome(7897))
-			//System.out.println("The number is Palindrome");
-		//else
-			//System.out.println("The number is not Palindrome");
-		//System.out.println("Checking if a given year is leap or not: ");
-		//if (w1l2.isLeapYear(2010))
-			//System.out.println("The year is leap year");
-		//else
-			//System.out.println("The year is not leap year");
+		System.out.println("Calculating ");
+		w1l2.convert(11.56);
+		System.out.println("Array without Duplicates:");
+		String[] arr = { "horse", "dog", "cat", "dog", "horse", "donkey" };
+		w1l2.removeDups(arr);
+		System.out.println("Draw Checkboard: ");
+		w1l2.drawCheckBoard(8);
+		System.out.println("Calculate weight in different planets: ");
+		System.out.println("Weight = " + w1l2.calculateWeight());
+		System.out.println("Counting Result of students: ");
+		w1l2.countResult();
+		System.out.println("Producing complex userName: ");
+		System.out.println("user name: " + w1l2.produceUserName());
+		System.out.println("Checking if a number is palindrome: ");
+		if (w1l2.isPalindrome(7897))
+			System.out.println("The number is Palindrome");
+		else
+			System.out.println("The number is not Palindrome");
+		System.out.println("Checking if a given year is leap or not: ");
+		if (w1l2.isLeapYear(2010))
+			System.out.println("The year is leap year");
+		else
+			System.out.println("The year is not leap year");
 		System.out.println(" Encription: " + w1l2.encrypt());
 		System.out.println("Decreption: " + w1l2.decrypt());
 
