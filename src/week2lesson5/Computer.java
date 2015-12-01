@@ -1,5 +1,5 @@
 package week2lesson5;
-
+//Computer class
 public class Computer {
 
 	String manufacturer;
@@ -7,7 +7,7 @@ public class Computer {
 	int ramSize;
 	int diskSize;
 	double processorSpeed;
-
+//constructor
 	public Computer(String manufacturer, String processor, int ramSize, int diskSize, double processorSpeed) {
 
 		this.manufacturer = manufacturer;

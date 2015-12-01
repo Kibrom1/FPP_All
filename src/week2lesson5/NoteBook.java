@@ -1,5 +1,6 @@
 package week2lesson5;
 
+//Notebook class inherits from computer
 public class NoteBook extends Computer {
 
 	double height;

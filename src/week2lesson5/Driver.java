@@ -1,5 +1,6 @@
 package week2lesson5;
 
+//driver class to test if computer and notebook classes are working correctly
 public class Driver {
 
 	public static void main(String[] args) {
