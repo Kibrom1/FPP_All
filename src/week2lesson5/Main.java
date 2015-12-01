@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Main {
 
-	public void main(String[] args) {
+	public static void main(String[] args) {
 
-		Professor prof1 = new Professor("Richard", 5000, 2);
+		Professor prof1 = new Professor("Richard", 10000, 2);
 		Professor prof2 = new Professor("Helen", 5500, 3);
 		Professor prof3 = new Professor("Jhon", 6000, 4);
 		Secretary sec1 = new Secretary("Nina", 3500, 50);
@@ -37,6 +37,8 @@ public class Main {
 			System.out.println("The total department's salary is " + totalDeptSalary);
 
 		}
+		System.out.println("You are not interested to see the sum of salaries, Good bye");
+		
 	}
 
 }
