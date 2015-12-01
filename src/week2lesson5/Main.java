@@ -2,6 +2,7 @@ package week2lesson5;
 
 import java.util.Scanner;
 
+//main class to test inheritance of parent class and child class
 public class Main {
 
 	public static void main(String[] args) {
@@ -38,7 +39,7 @@ public class Main {
 
 		}
 		System.out.println("You are not interested to see the sum of salaries, Good bye");
-		
+
 	}
 
 }

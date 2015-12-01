@@ -1,7 +1,7 @@
 package week2lesson5;
 
 import java.time.LocalDate;
-
+//Department Employee parnt class
 public class DeptEmployee {
 
 	String name;
