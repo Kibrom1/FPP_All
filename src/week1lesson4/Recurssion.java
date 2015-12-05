@@ -6,11 +6,11 @@ import java.util.Arrays;
 public class Recurssion {
 	// mergesort using recursive function
 	String mergeSort(String str1, String str2) {
-		if ((str1 == null || str1.equals("")) && (str2 == null || str2.equals("")))
+		if ((str1 == null || str1.equals("")) && (str2 == null || str2.equals("")))//both null
 			return null;
-		else if ((str1 == null || str1.equals("")) && (!(str2 == null || str2.equals(""))))
+		else if ((str1 == null || str1.equals("")) && (!(str2 == null || str2.equals(""))))//str1 null but str2 have some string
 			return str2;
-		else if ((str2 == null || str2.equals("")) && (!(str1 == null || str1.equals(""))))
+		else if ((str2 == null || str2.equals("")) && (!(str1 == null || str1.equals(""))))//str1 have some string but str2 null
 			return str1;
 		else {
 			if (str1.charAt(0) < str2.charAt(0))
