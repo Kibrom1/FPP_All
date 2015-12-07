@@ -42,3 +42,33 @@ public class MainInterface {
 	}
 
 }
+
+//Output
+//===========
+/*Calculate Manager's Salary. 
+Enter Number of Hours: 
+170
+Enter Number of extrahours: 
+20
+Enter Experience: 
+7
+Employee's Name: Jhon
+Employee's Id: 003
+Employee's SSN: 00Au
+Employee's BirthDate: Thu Jan 15 00:09:00 CST 1976
+Employee's address: New york
+Salary : 3800.0
+Calculate Secretary's Salary. 
+Enter  Number of Hours: 
+175
+Enter experience: 
+8
+Employee's Name: Selina
+Employee's Id: 001
+Employee's SSN: Eth11
+Employee's BirthDate: Thu Jan 15 00:09:00 CST 1976
+Employee's address: Fairfield
+Employee's number of hours: 175
+Employee's Experience: 8
+Salary : 19300.0
+*/

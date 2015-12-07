@@ -10,8 +10,14 @@ public class Main {
 		
 		for(Computer comps: computers){
 			String type = comps.getClass().getSimpleName();
-			System.out.println("The computer is " + type + ": " + comps.costProduct());
+			System.out.println("The price of computer is " + type + ": " + comps.costProduct());
 		}
 	}
 
 }
+//Output
+//======
+//The price of computer is Desktop: 2000.0
+//The price of computer is MainFrame: 20000.0
+//The price of computer is NoteBook: 500.0
+
