@@ -83,7 +83,7 @@ public class Week1Lesson2 {
 		int max = 999, min = 100;
 
 		int randomNumber = (int) ((Math.random() * (max - min + 1))) + min;
-		//System.out.println("Random  " + randomNumber);
+		// System.out.println("Random " + randomNumber);
 		return firstName.substring(0, 1) + lastName.substring(0, 5) + randomNumber;
 	}
 
@@ -100,9 +100,8 @@ public class Week1Lesson2 {
 			if (!(arr[i].equals(" ")))
 				System.out.println(arr[i]);
 
-
 		}
-	
+
 	}
 
 	// Drawing check board

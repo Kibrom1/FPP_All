@@ -20,7 +20,7 @@ public class Main {
 		departments[4] = sec2;
 
 		double totalProfessorSalary = 0, totalSecretarySalary = 0, totalDeptSalary = 0;
-		System.out.println("Do you want the total salaries? ");
+		System.out.println("Do you want the total salaries? type yes or no ");
 		Scanner sc = new Scanner(System.in);
 		String response = sc.nextLine();
 		String lowerResponse = response.toLowerCase();
@@ -43,3 +43,18 @@ public class Main {
 	}
 
 }
+//Output if type yes
+//================
+//Do you want the total salaries? type yes or no 
+//yes
+//The total professor's salary is 21500.0
+//The total secretary's salary is 7820.0
+//The total department's salary is 29320.0
+//You are not interested to see the sum of salaries, Good bye
+//========================
+//Output if typed no
+//===========
+//Do you want the total salaries? type yes or no 
+//no
+//You are not interested to see the sum of salaries, Good bye
+

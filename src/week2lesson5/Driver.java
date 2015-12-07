@@ -16,3 +16,9 @@ public class Driver {
 	}
 
 }
+//Output
+//=========
+//The notepad's computing power is: 8.8
+//The Screen size of the notepad is: 16.0
+//The computer's computing power is: 8.8
+
