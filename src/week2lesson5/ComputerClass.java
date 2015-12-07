@@ -1,5 +1,5 @@
 package week2lesson5;
-
+//main class
 public class ComputerClass {
 	private NoteBookI notePad;
 	public Object clone() throws CloneNotSupportedException {
@@ -22,6 +22,7 @@ public class ComputerClass {
 	}
 
 }
+//new Computer class
 class ComputerNew
 {
 	String manufacturer;
@@ -95,7 +96,7 @@ class ComputerNew
 	}
 
 }
-
+//notebook class that extends the computer class and implemetns the cloneable interface
 class NoteBookI extends Computer implements Cloneable
 {
 	NoteBookI(String manufacturer, String processor, int ramSize, int diskSize,double processorSpeed,
@@ -159,3 +160,9 @@ class NoteBookI extends Computer implements Cloneable
 		return height * width;
 	}
 }
+//Output
+//========
+/*
+ PC1 and PC2 are equal: true
+noteBook is clon of notebook2, as a result both are equal:true
+*/
