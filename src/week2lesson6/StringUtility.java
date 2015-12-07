@@ -23,7 +23,7 @@ public class StringUtility extends JFrame {
 		btnCount.setBounds(50, 50, 170, 25);
 		btnCount.addActionListener(new ActionListener() {
 
-			//Method that couns the number of characters in a string
+			// Method that couns the number of characters in a string
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
@@ -38,16 +38,16 @@ public class StringUtility extends JFrame {
 		btnReverse.setBounds(50, 90, 170, 25);
 		btnReverse.addActionListener(new ActionListener() {
 
-			//reverse input string
+			// reverse input string
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				input = txtInput.getText();
-  				  outPut="";
-  				 for(int i=input.length()-1;i>=0;i--){
-  					 outPut=outPut+""+input.substring(i,i+1);
-  				 }
-  				 txtOutput.setText(outPut);
+				outPut = "";
+				for (int i = input.length() - 1; i >= 0; i--) {
+					outPut = outPut + "" + input.substring(i, i + 1);
+				}
+				txtOutput.setText(outPut);
 			}
 		});
 		panel.add(btnReverse);
@@ -55,17 +55,17 @@ public class StringUtility extends JFrame {
 		btnRemoveDuplicate.setBounds(50, 130, 170, 25);
 		btnRemoveDuplicate.addActionListener(new ActionListener() {
 
-			//remove duplicates from a string
+			// remove duplicates from a string
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				 input = txtInput.getText();
-   				 outPut="";
-   				 for(int i=0;i<input.length();i++){
-   				 if(!outPut.contains(input.substring(i,i+1)))
-   					 
-   						 outPut += input.substring(i,i+1);
-   				 }
+				input = txtInput.getText();
+				outPut = "";
+				for (int i = 0; i < input.length(); i++) {
+					if (!outPut.contains(input.substring(i, i + 1)))
+
+						outPut += input.substring(i, i + 1);
+				}
 				txtOutput.setText(outPut);
 			}
 		});
@@ -100,3 +100,5 @@ public class StringUtility extends JFrame {
 	}
 
 }
+// output
+// can be seen by running the code

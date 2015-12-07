@@ -170,7 +170,8 @@ public class Registration extends JFrame {
 				// TODO Auto-generated method stub
 				if (txtFirstName.getText().equals("") || txtLastName.getText().equals("")
 						|| txtStreet.getText().equals("") || txtCity.getText().equals("")
-						|| txtState.getText().equals("") || txtCountry.getText().equals("") || txtMessage.getText().equals("")) {
+						|| txtState.getText().equals("") || txtCountry.getText().equals("")
+						|| txtMessage.getText().equals("")) {
 					if (txtFirstName.getText().equals(""))
 						JOptionPane.showMessageDialog(panel, "Please Enter First Name");
 					if (txtLastName.getText().equals(""))
@@ -183,12 +184,10 @@ public class Registration extends JFrame {
 						JOptionPane.showMessageDialog(panel, "Please Enter State Name");
 					if (txtCountry.getText().equals(""))
 						JOptionPane.showMessageDialog(panel, "Please Enter Country Name");
-				} 
-				else if((chkAfternoon.isSelected() == false) && (chkMorning.isSelected() == false) && (chkEvening.isSelected()== false))
-				{
+				} else if ((chkAfternoon.isSelected() == false) && (chkMorning.isSelected() == false)
+						&& (chkEvening.isSelected() == false)) {
 					JOptionPane.showMessageDialog(panel, "Please select suittable session!");
-				}
-				else {
+				} else {
 					JOptionPane.showMessageDialog(panel, "Successfully Registered!");
 				}
 
@@ -209,3 +208,5 @@ public class Registration extends JFrame {
 	}
 
 }
+// Output
+// Can be seen by running the code
