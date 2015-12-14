@@ -120,7 +120,6 @@ class HashTable {
 
 class HashTableApp {
 	public static void main(String[] args) throws IOException {
-		System.out.println(Math.pow(3, 4));
 		String aKey;
 		String value;
 
@@ -169,3 +168,64 @@ class HashTableApp {
 		// --------------------------------------------------------------
 } // end class HashTableApp
 	////////////////////////////////////////////////////////////////
+/*
+Enter size of hash table: 11
+Enter first letter of 
+show, insert, delete, or find: 
+i
+Enter key and value to insert: 
+jhon mark
+Enter first letter of 
+show, insert, delete, or find: 
+helen jhon
+Invalid entry
+
+Enter first letter of 
+show, insert, delete, or find: 
+Invalid entry
+
+Enter first letter of 
+show, insert, delete, or find: 
+s
+Table: 
+Index : 0 jhon mark
+Index : 1 **
+Index : 2 **
+Index : 3 F FPP
+Index : 4 **
+Index : 5 **
+Index : 6 J Java
+Index : 7 **
+Index : 8 **
+Index : 9 C C#
+Index : 10 S SE
+
+Enter first letter of 
+show, insert, delete, or find: 
+i
+Enter key and value to insert: 
+Amir labira
+Enter first letter of 
+show, insert, delete, or find: 
+i
+Enter key and value to insert: 
+Mehammod salih
+Enter first letter of 
+show, insert, delete, or find: 
+s
+Table: 
+Index : 0 jhon mark
+Index : 1 Mehammod salih
+Index : 2 **
+Index : 3 F FPP
+Index : 4 **
+Index : 5 **
+Index : 6 J Java
+Index : 7 **
+Index : 8 Amir labira
+Index : 9 C C#
+Index : 10 S SE
+
+Enter first letter of 
+show, insert, delete, or find:
+*/

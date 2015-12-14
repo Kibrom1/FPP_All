@@ -35,9 +35,9 @@ public class Course {
 		mapCourse.put("CS390", new Course("FPP", fppFaculty));
 		mapCourse.put("CS490", new Course("MPP", mppFaculty));
 
-		System.out.println(mapCourse.containsKey("CS390")); // checking if the
+		System.out.println("Contains: " + mapCourse.containsKey("CS390")); // checking if the
 															// given id exists
-		System.out.println(mapCourse.size());
+		System.out.println("Size: " + mapCourse.size());
 
 		System.out.println(mapCourse);
 		for (String key : mapCourse.keySet()) {
@@ -59,3 +59,18 @@ public class Course {
 	}
 
 }
+/*
+ Contains: true
+Size: 2
+{CS390=FPP Faculty [Ljava.lang.String;@2a139a55, CS490=MPP Faculty [Ljava.lang.String;@15db9742}
+CS390 CS490 FPP 
+MPP 
+Course Id: CS390 Course Name: FPPFaculties :
+1. Renuka 
+2. Joe Lermon 
+3. Paul 
+Course Id: CS490 Course Name: MPPFaculties :
+1. Jhon 
+2. Helena 
+3. Brian 
+*/
