@@ -35,12 +35,12 @@ public class Login extends JFrame implements ActionListener{
 		txtPssd.setBounds(120, 80, 150, 25);
 		pane.add(txtPssd);
 		btnLogin = new JButton("Login");
-		btnLogin.setBounds(50, 120, 100, 30);
+		btnLogin.setBounds(50, 117, 100, 30);
 		btnLogin.setBackground(Color.RED);
 		btnLogin.addActionListener(this);
 		pane.add(btnLogin);
 		btnRegister = new JButton("Register");
-		btnRegister.setBounds(180, 120, 100, 30);
+		btnRegister.setBounds(233, 117, 100, 30);
 
 		pane.add(btnRegister);
 		setBounds(0, 0, 400, 200);
