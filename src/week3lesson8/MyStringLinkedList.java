@@ -2,12 +2,15 @@ package week3lesson8;
 
 public class MyStringLinkedList {
 	Node header;
+	private int size = 0;
 
 	MyStringLinkedList() {
+		size++;
 		header = null;
 	}
 
 	public void addFront(String item) {
+
 		if (header == null)
 			header = new Node(null, item, null);
 		else {
@@ -15,27 +18,41 @@ public class MyStringLinkedList {
 			header.previous = n;
 			header = n;
 		}
+		size++;
 	}
 
 	// Implement the code
-
 	public void addLast(String item) {
-		
-		if(header == null)
+
+		if (header == null)
 			header = new Node(null, item, null);
-		else{
+		else {
 			Node temp = findLast();
-			Node newNode = new Node(temp, item,null);
+			Node newNode = new Node(temp, item, null);
 			temp.next = newNode;
 			newNode.previous = temp;
-			
+
 		}
+		size++;
 
 	}
 
 	// implement the code
 	public void postAddNode(Node n, String value) {
-		
+		Node newNode;
+		if (n == null)
+			newNode = new Node(null, value, null);
+		else if (n.next == null) {
+			addLast(value);
+			// n.next = new Node(n, value, null);
+			// n.next.previous = n;
+		} else {
+			newNode = new Node(n, value, n.next);
+			n.next = newNode;
+			n.next.previous = newNode;
+		}
+		size++;
+
 	}
 	// implement the code
 
@@ -77,7 +94,7 @@ public class MyStringLinkedList {
 			n.previous.next = newNode;
 			n.previous = newNode;
 		}
-
+		size++;
 	}
 
 	public Node findLast() {
@@ -89,6 +106,25 @@ public class MyStringLinkedList {
 				temp = temp.next;
 			return temp;
 		}
+	}
+
+	public Node getFirst() {
+		if (header == null)
+			return null;
+		return header;
+	}
+
+	public Node getLast() {
+
+		return findLast();
+	}
+
+	public void removeFirst() {
+		deleteNode(getFirst());
+	}
+
+	public void removeLast() {
+		deleteNode(getLast());
 	}
 
 	public Node findItem(String str) {
@@ -133,6 +169,7 @@ public class MyStringLinkedList {
 			}
 
 		}
+		size--;
 
 	}
 
@@ -145,6 +182,7 @@ public class MyStringLinkedList {
 			tempTwo = tempOne;
 		}
 		header = null;
+		size = 0;
 	}
 
 	public String toString() {
@@ -235,3 +273,42 @@ public class MyStringLinkedList {
 	}
 
 }
+
+//Output
+/*
+
+-->[NULL]
+==>[NULL]
+-->[Carrot Cake]-->[NULL]
+==>[Carrot Cake]==>[NULL]
+-->[Blueberry Muffin]-->[Carrot Cake]-->[NULL]
+==>[Carrot Cake]==>[Blueberry Muffin]==>[NULL]
+-->[Apple Pie]-->[Blueberry Muffin]-->[Carrot Cake]-->[NULL]
+==>[Carrot Cake]==>[Blueberry Muffin]==>[Apple Pie]==>[NULL]
+-->[Apple Pie]-->[Blueberry Muffin]-->[Carrot Cake]-->[Orange Juice]-->[NULL]
+==>[Orange Juice]==>[Carrot Cake]==>[Blueberry Muffin]==>[Apple Pie]==>[NULL]
+-->[Apple Pie]-->[Blueberry Muffin]-->[Carrot Cake]-->[Orange Juice]-->[Peach Sauce]-->[NULL]
+==>[Peach Sauce]==>[Orange Juice]==>[Carrot Cake]==>[Blueberry Muffin]==>[Apple Pie]==>[NULL]
+I am here 2
+-->[Blueberry Muffin]-->[Carrot Cake]-->[Orange Juice]-->[Peach Sauce]-->[NULL]
+==>[Peach Sauce]==>[Orange Juice]==>[Carrot Cake]==>[Blueberry Muffin]==>[NULL]
+I am here 3
+-->[Blueberry Muffin]-->[Carrot Cake]-->[Orange Juice]-->[NULL]
+==>[Orange Juice]==>[Carrot Cake]==>[Blueberry Muffin]==>[NULL]
+I am here 4
+-->[Blueberry Muffin]-->[Orange Juice]-->[NULL]
+==>[Orange Juice]==>[Blueberry Muffin]==>[NULL]
+-->[Blueberry Muffin]-->[Carrot Cake]-->[Orange Juice]-->[NULL]
+==>[Orange Juice]==>[Blueberry Muffin]==>[NULL]
+-->[Apple Pie]-->[Blueberry Muffin]-->[Carrot Cake]-->[Orange Juice]-->[NULL]
+==>[Orange Juice]==>[Blueberry Muffin]==>[Apple Pie]==>[NULL]
+-->[Apple Pie]-->[Blueberry Muffin]-->[Carrot Cake]-->[Danish Delight]-->[Orange Juice]-->[NULL]
+==>[Orange Juice]==>[Blueberry Muffin]==>[Apple Pie]==>[NULL]
+-->[Apple Pie]-->[Blueberry Muffin]-->[Mango Smoothie]-->[Orange Juice]-->[NULL]
+==>[Orange Juice]==>[Mango Smoothie]==>[Blueberry Muffin]==>[Apple Pie]==>[NULL]
+-->[Apple Pie]-->[Blueberry Muffin]-->[Mango Smoothie]-->[Orange Juice]-->[Peach Sauce]-->[NULL]
+==>[Peach Sauce]==>[Orange Juice]==>[Mango Smoothie]==>[Blueberry Muffin]==>[Apple Pie]==>[NULL]
+-->[NULL]
+==>[NULL]
+The new size 0
+*/

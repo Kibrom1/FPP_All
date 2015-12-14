@@ -59,13 +59,12 @@ public class ArrayListSort {
 			Employe e1 = new Employe("Manokar", 25);
 			Employe e2 = new Employe("Jai", 30);
 			Employe e3 = new Employe("Sunil", 22);
-			
 					
 			list.add(e1);
 			list.add(e2);
 			list.add(e3);
+			list.add(1, new Employe("Kebede",34));
 			list.set(0, new Employe("Manokar",35));
-			
 			System.out.println("Before sort: ");
 			for(int i=0; i<list.size(); i++){
 				Employe e = list.get(i);
