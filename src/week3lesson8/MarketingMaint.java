@@ -98,6 +98,5 @@ aelen
 Joshu
 [Name: Gebre Product Name: Computer Sales Amount: 348.0, Name: Joshu Product Name: steal Sales Amount: 200.9]
 Size: 2
-
  
  */

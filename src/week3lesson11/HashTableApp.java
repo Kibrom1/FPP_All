@@ -58,8 +58,7 @@ class HashTable {
 	public int hashFunc(String keys) {
 		int key = 0;
 		int length = keys.length();
-		for(int i=0; i< keys.length(); i++)
-		{
+		for (int i = 0; i < keys.length(); i++) {
 			key += keys.charAt(i) * Math.pow(31, length);
 			length--;
 		}
@@ -130,12 +129,12 @@ class HashTableApp {
 		int size = in.nextInt();
 		HashTable theHashTable = new HashTable(size);
 
-		//System.out.println(theHashTable.hashFunc("hagos"));
+		// System.out.println(theHashTable.hashFunc("hagos"));
 		theHashTable.insert("F", "FPP");
 		theHashTable.insert("J", "Java");
 		theHashTable.insert("S", "SE");
 		theHashTable.insert("C", "C#");
-		//theHashTable.insert("Kibrom", "hagos");
+		// theHashTable.insert("Kibrom", "hagos");
 
 		while (true) // interact with user
 		{

@@ -40,16 +40,21 @@ public class Course {
 		System.out.println(mapCourse.size());
 
 		System.out.println(mapCourse);
-
-		for (int i = 0; i < mapCourse.size(); i++) {
-			
-
+		for (String key : mapCourse.keySet()) {
+			System.out.print(key + " ");
 		}
-		
-		/*
-		 * Course cc = mapCourse.get("CS390");
-		 * System.out.println(cc.getFaculty());
-		 */
+		for (String key : mapCourse.keySet()) {
+			System.out.println(mapCourse.get(key).getC_Name() + " ");
+		}
+		for (String key : mapCourse.keySet()) {
+			System.out.println("Course Id: " + key + " Course Name: " + mapCourse.get(key).getC_Name() + "Faculties :");
+			int num = 1;
+			for(String faculty: mapCourse.get(key).getFaculty()){
+				System.out.println(num + ". " + faculty  + " ");
+				num++;
+			}
+			
+		}
 
 	}
 
