@@ -27,8 +27,11 @@ public class Palindrom {
 		if (isPalindrome("Beautiful")) {
 			System.out.println("It is palindrome");
 		} else
-			System.out.println(isPalindrome("It is not Palindrome!"));
+			System.out.println("It is not palindrome");
 
 	}
-
 }
+//Output
+/*
+It is not palindrome
+*/
