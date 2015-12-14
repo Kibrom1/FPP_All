@@ -19,7 +19,6 @@ class Node implements Comparable {
 			return 1;
 		else if (value < (Integer) o)
 			return -1;
-
 		return 0;
 	}
 }
@@ -32,9 +31,7 @@ class PriorityQueueLinkedList {
 	public PriorityQueueLinkedList() {
 
 		front = null;
-
 		rear = null;
-
 		size = 0;
 	}
 
@@ -49,77 +46,38 @@ class PriorityQueueLinkedList {
 
 	public void add(int vaue) {
 		Node newNode = new Node(vaue);
-
 		size++;
-
 		if (isEmpty()) {
-
 			front = rear = newNode;
-
 			front.next = null;
-
-		}
-
-		else if (front == rear) {
-
+		} else if (front == rear) {
 			if (rear.value > newNode.value) {
-
 				newNode.next = rear;
-
 				front = newNode;
-
-			}
-
-			else {
-
+			} else {
 				rear.next = newNode;
-
 				front = rear;
-
 				newNode.next = null;
-
 			}
-
 		}
 
 		else {
-
 			Node current = front;
-
 			Node prevoius = null;
-
 			while (current != null && newNode.value > current.value) {
-
 				prevoius = current;
-
 				current = current.next;
-
 			}
-
 			if (prevoius == null) {
-
 				newNode.next = front;
-
 				front = newNode;
-
-			}
-
-			else if (prevoius == front) {
-
+			} else if (prevoius == front) {
 				newNode.next = prevoius.next;
-
 				front.next = newNode;
-
-			}
-
-			else if (prevoius == rear) {
-
+			} else if (prevoius == rear) {
 				rear.next = newNode;
-
 				rear = newNode;
-
 				rear.next = null;
-
 			}
 
 			else {
@@ -142,43 +100,31 @@ class PriorityQueueLinkedList {
 		front = front.next;
 
 		size--;
-
 		return temp;
-
 	}
 
 	public Node peek() {
 		if (isEmpty())
-
 			return null;
-
 		return front;
 	}
 
 	public String toString() {
 
 		if (isEmpty()) {
-
 			System.out.print("Empty Queue List");
-
 			return "";
-
 		}
-
 		Node current = front;
-
 		System.out.print("Front");
 
 		while (current != null) {
 
 			current.displayAll();
-
 			current = current.next;
-
 		}
 
 		System.out.print("->Rear");
-
 		System.out.println();
 
 		return "";
@@ -226,15 +172,13 @@ public class PriorityQueueLinkedListMain {
 	}
 
 }
-//Output
+// Output
 /*
- Front(->: 52)(->: 87)(->: 91)(->: 200)(->: 430)(->: 552)(->: 872)(->: 921)->Rear
-
-Removed Value: 52
-After removing
-Front(->: 87)(->: 91)(->: 200)(->: 430)(->: 552)(->: 872)(->: 921)->Rear
-
-Queue size: 7
-Queue peek value: 87
-Front(->: 552)(->: 872)(->: 921)->Rear
+ * Front(->: 52)(->: 87)(->: 91)(->: 200)(->: 430)(->: 552)(->: 872)(->:
+ * 921)->Rear
+ * 
+ * Removed Value: 52 After removing Front(->: 87)(->: 91)(->: 200)(->: 430)(->:
+ * 552)(->: 872)(->: 921)->Rear
+ * 
+ * Queue size: 7 Queue peek value: 87 Front(->: 552)(->: 872)(->: 921)->Rear
  */
