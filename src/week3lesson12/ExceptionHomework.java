@@ -36,7 +36,7 @@ public class ExceptionHomework {
 			System.out.println(ex.getMessage());
 		} catch (InputMismatchException ex) {
 
-			System.out.println("Please enter only integer");
+			System.out.println("Enter should be only integer");
 		} finally {
 			System.out.println("Done!");
 		}
