@@ -52,3 +52,13 @@ public class ExceptionHomework {
 	}
 
 }
+//Output
+/*
+ 2
+/ by zero
+control went down to the finally block
+Please Enter Mark
+c
+Enter should be only integer
+Done!
+*/

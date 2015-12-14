@@ -57,3 +57,10 @@ public class CustomerAccount {
 
 	}
 }
+//Output
+/*
+Ener w to withdraw or d to depoist: 
+w
+Enter amount to withdraw: 100
+Balance after withdrawal: 900.0
+*/
